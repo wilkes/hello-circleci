@@ -7,7 +7,7 @@ jobs:
     steps:
     - checkout
     - restore_cache:
-        - key: hello-circleci-{{ checksum "deps.edn" }}
+        key: hello-circleci-{{ checksum "deps.edn" }}
     - run: clj -m hello
     - save_cache:
         paths:
