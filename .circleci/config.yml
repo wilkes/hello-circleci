@@ -5,4 +5,4 @@ jobs:
     - image: circleci/clojure:tools-deps
     steps:
     - checkout
-    - run: echo "hello world"
+    - run: clj -m hello
