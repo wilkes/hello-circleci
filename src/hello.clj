@@ -10,4 +10,5 @@
     dt))
 
 (defn -main []
-  (println "Hello world, the time is" (time-str (t/now))))
+  (println "Hello world, the time is" (time-str (t/now)))
+  (throw (ex-info "Make boom boom!" {})))
