@@ -8,7 +8,7 @@ jobs:
     - checkout
     - restore_cache:
         key: hello-circleci-{{ checksum "deps.edn" }}
-    - run: clj -Spath
+    - run: clojure -Spath
     - save_cache:
         paths:
           - ~/.m2
