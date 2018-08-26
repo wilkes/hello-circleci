@@ -12,3 +12,4 @@ jobs:
     - save_cache:
         paths:
           - ~/.m2
+        key: hello-circleci-{{ checksum "deps.edn" }}
